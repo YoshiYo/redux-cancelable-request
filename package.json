@@ -2,7 +2,7 @@
   "name": "redux-cancelable-request",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "author": "yoshiyo",
   "license": "MIT",
   "keywords": [
@@ -14,8 +14,17 @@
     "lodash": "^4.17.11",
     "xxhashjs": "^0.2.2"
   },
+  "scripts": {
+    "prepack:babel": "babel index.js.flow --out-file lib/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/YoshiYo/redux-cancelable-request.git"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-flow": "^7.0.0",
+    "flow-bin": "^0.98.0"
   }
 }
